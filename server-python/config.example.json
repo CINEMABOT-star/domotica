@@ -1,0 +1,6 @@
+{
+  "port": 8000,
+  "admin_username": "admin",
+  "admin_password_hash": "sha256-della-password",
+  "device_token": "token-segreto-per-esp32"
+}

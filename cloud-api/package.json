@@ -1,0 +1,17 @@
+{
+  "name": "domotica-cloud-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "check": "node scripts/check-env-shape.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0"
+  },
+  "devDependencies": {
+    "vercel": "^34.3.0"
+  }
+}

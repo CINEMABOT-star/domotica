@@ -1,0 +1,31 @@
+COLLEGAMENTI ESP32-C3 SUPERMini + RELE SINGOLO
+
+ALIMENTAZIONE BASSA TENSIONE
+
+Alimentatore 5V +  ->  pin 5V ESP32-C3
+Alimentatore 5V -  ->  pin GND ESP32-C3
+
+Modulo rele:
+VCC rele           ->  5V ESP32-C3
+GND rele           ->  GND ESP32-C3
+IN rele            ->  GPIO4 ESP32-C3
+
+Interruttore fisico:
+Un contatto        ->  GPIO3 ESP32-C3
+Altro contatto     ->  GND ESP32-C3
+
+
+COLLEGAMENTO LAMPADA 230V
+
+Fase ingresso      ->  COM rele
+NO rele            ->  fase lampada
+Neutro             ->  neutro lampada
+Terra              ->  terra lampada, se prevista
+
+Usa NO per luce spenta quando il rele e spento.
+
+
+ATTENZIONE
+
+La 230V puo uccidere. Togli corrente dal quadro prima di lavorare.
+Usa morsetti e contenitori isolati. Se non sei pratico, fai fare la parte 230V a un elettricista.

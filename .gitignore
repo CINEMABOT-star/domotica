@@ -1,0 +1,16 @@
+server/.env
+PASSWORD_DEVICE_MQTT.txt
+PASSWORD_PANNELLO_WEB.txt
+DEVICE_TOKEN_ESP32.txt
+CLOUD_SECRETS_DA_INSERIRE_SU_VERCEL.txt
+server-python/config.json
+server-python/state.json
+infra/mosquitto/config/passwords.txt
+infra/mosquitto/data/
+infra/mosquitto/log/
+firmware/esp32c3-relay-node/include/config.h
+firmware/esp32c3-relay-node/.pio/
+server-python/server.pid
+server-python/*.log
+__pycache__/
+*.pyc

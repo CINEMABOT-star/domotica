@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Domotica</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section id="loginView" class="login-panel" hidden>
+        <div>
+          <p class="eyebrow">Casa online</p>
+          <h1>Domotica</h1>
+          <p class="muted">Pannello protetto per comandare luci e rele.</p>
+        </div>
+        <form id="loginForm" class="login-form">
+          <label>
+            Utente
+            <input id="username" name="username" autocomplete="username" required />
+          </label>
+          <label>
+            Password
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+          </label>
+          <button type="submit">Accedi</button>
+          <p id="loginError" class="error" role="alert"></p>
+        </form>
+      </section>
+
+      <section id="appView" hidden>
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Pannello</p>
+            <h1>Luci</h1>
+          </div>
+          <div class="topbar-actions">
+            <span id="apiStatus" class="status">API</span>
+            <button id="refreshBtn" class="secondary" type="button">Aggiorna</button>
+            <button id="logoutBtn" class="secondary" type="button">Esci</button>
+          </div>
+        </header>
+
+        <div id="emptyState" class="empty" hidden>
+          Nessun dispositivo ancora rilevato. Carica il firmware cloud su una ESP32 e aspetta il primo aggiornamento.
+        </div>
+        <div id="rooms" class="rooms"></div>
+      </section>
+    </main>
+
+    <script src="./config.js"></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
