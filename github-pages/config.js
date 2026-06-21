@@ -1,4 +1,3 @@
 window.DOMOTICA_CONFIG = {
-  // Dopo il deploy Vercel sostituisci con il tuo URL, senza slash finale.
-  API_BASE_URL: "https://TUO-PROGETTO.vercel.app"
+  API_BASE_URL: "https://domotica-1e43t4x52-peli1.vercel.app"
 };
